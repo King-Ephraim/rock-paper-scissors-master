@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(to right, hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.head-container{
+    border: 2px solid hsl(217, 16%, 45%);
+    display: flex;
+    border-radius: 10px;
+    padding: 10px 10px;
+    gap: 55%;
+    color: #fff;
+    margin-left:25%;
+    margin-right:25%;
+    margin-top: 30px;
+}
+.game-name{
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-score{
+    border: 2px solid #fff;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.show-score p{
+    color: hsl(229, 64%, 46%);
+    font-size: 15px;
+}
+.show-score h1{
+    color: hsl(217, 16%, 45%);
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+
+.triangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.triangle svg{
+    margin-top: -80px;
+}
+
+.paper {
+    border: 20px solid hsl(230, 89%, 62%) ;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 35px 45px;
+    background-color: #fff;
+    position: absolute;
+    left: 34%;
+    top: 32%;
+    box-shadow: inset 0 2px 8px hsl(229, 25%, 31%);
+}
+.scissors {
+    border: 20px solid hsl(39, 89%, 49%) ;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 35px 45px;
+    background-color: #fff;
+    position: absolute;
+    left: 53%;
+    top: 32%;
+    box-shadow: inset 0 2px 8px hsl(229, 25%, 31%);
+}
+
+.rock{
+    border: 20px solid hsl(349, 71%, 52%) ;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 40px 45px;
+    background-color: #fff;
+    position: absolute;
+    left: 43.5%;
+    top: 63%;
+    box-shadow: inset 0 2px 8px hsl(229, 25%, 31%);
+}
+
+.rules{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 15px 20px;
+    padding-top: 45px;
+    display: none;
+}
+.close{
+    position: absolute;
+    top: 27%;
+    left: 60%;
+    display: none;
+    cursor: pointer;
+}
+.rules::before{
+    content: "RULES";
+    color: hsl(237, 49%, 15%);
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 2%;
+}
+
+.button button{
+    border: 2px solid #fff;
+    padding: 8px 25px;
+    background-color:hsl(237, 49%, 15%) ;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    right: 30px;
+    top: 90%;
+    cursor: pointer;
+}
+
+.opponent{
+    height: 27vh;
+    width: 13vw;
+    background-color: hsla(238, 48%, 15%, 0.322);
+    border-radius: 50%;
+    padding: 35px 45px;
+    position: absolute;
+    left: 63%;
+    top: 50%;
+    display: none;
+}
+
+.DECISION{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+#WINNER{
+    font-size: 50px;
+    color: #fff;
+    display: none;
+}
+#LOSER{
+    font-size: 50px;
+    color: #fff;
+    display: none;
+}
+#EGALITY{
+    font-size: 50px;
+    color: #fff;
+    display: none;
+}
+
+#playagain{
+    border: 2px solid #fff;
+    padding: 8px 25px;
+    background-color: #fff ;
+    border-radius: 5px;
+    color:hsl(237, 49%, 15%);
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}
+
+
